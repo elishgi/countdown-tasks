@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Share+Tech+Mono&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  background-image: url('https://assets.codepen.io/1462889/code-pattern.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 2em 2em;
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em; /* ריווח ברור יותר */
+  margin-top: 6em;
+}
+
+.toolbox-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+.toolbar {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #1a1a1a;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  box-shadow: 0 0 10px #000;
+}
+
+.toolbar button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background: #1a1a1a;
+  padding: 1.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: -2px 0 10px #000;
+  z-index: 1000;
+}
+
+.sidebar input,
+.sidebar select {
+  padding: 0.5em;
+  font-size: 16px;
+  width: 100%;
+  background: #000;
+  color: white;
+  border: 1px solid #555;
+}
+
+.sidebar button {
+  padding: 0.6em;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.close-btn {
+  background: #f33 !important;
+  color: white;
+}
+
+h1.title {
+  font-size: 2.8em;
+  font-family: 'Share Tech Mono', monospace;
+  color: #0ff;
+  margin-bottom: 0.2em;
+}
+
+p.subtitle {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2em;
+  color: #aaa;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+svg {
+  transform: scale(2);
+}
